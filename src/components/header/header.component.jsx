@@ -8,13 +8,17 @@ import { ReactComponent as Logo } from '../../assets/crown.svg';
 import './header.styles.scss';
 
 const Header = ({ currentUser }) => {
-    console.log(currentUser)
+    
     return (
     <div className='header'>
         <Link className='logo-container' to="/">
             <Logo className='logo'/>
         </Link>
         <div className='options'>
+            {
+                currentUser ? <div className='option'>HELLO, {currentUser.displayName.toUpperCase()}</div> :null
+
+            }
             <Link className='option' to="/shop"> 
                 SHOP
             </Link>
@@ -22,11 +26,15 @@ const Header = ({ currentUser }) => {
                 CONTACT
             </Link>
             {
+                
                 currentUser ?
                 <div className='option' onClick={ () => auth.signOut() }> SIGN OUT </div>
                 : 
                 <Link className='option' to='/signin'> SIGN IN </Link>
+                
+                
             }
+
         </div>
     </div>
 )}
