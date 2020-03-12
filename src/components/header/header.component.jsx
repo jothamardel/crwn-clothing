@@ -16,7 +16,7 @@ const Header = ({ currentUser }) => {
         </Link>
         <div className='options'>
             {
-                currentUser ? <div className='option'>HELLO, {currentUser.displayName.toUpperCase()}</div> :null
+                currentUser ? <div className='option welcome'>Welcome, {currentUser.displayName.toUpperCase()}</div> :null
 
             }
             <Link className='option' to="/shop"> 

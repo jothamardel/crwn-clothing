@@ -18,9 +18,15 @@
       align-items: center;
       justify-content: flex-end;
       cursor: pointer;
+
   
       .option {
         padding: 10px 15px;
+
+        &.welcome {
+          background-color: #343434;
+          color: white;
+        }
       }
     }
   }
