@@ -7,7 +7,6 @@ import { auth } from '../../firebase/firebase.utils';
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 
 import './header.styles.scss';
-// import userReducer from '../../redux/user/user.reducer';
 
 const Header = ({ currentUser }) => {
     
