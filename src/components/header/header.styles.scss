@@ -4,10 +4,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    // padding-left: 50px;
   
     .logo-container {
-      height: 100%;
-      width: 70px;
+      display: flex;
+      // height: 100%;
+      // width: 70px;
       padding: 25px;
     }
   

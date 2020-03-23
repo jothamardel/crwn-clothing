@@ -22,6 +22,7 @@ const Header = ({ currentUser, hidden }) => {
     <div className='header'>
         <Link className='logo-container' to="/">
             <Logo className='logo'/>
+            <h3>MLM</h3>
         </Link>
         <div className='options'>
             {
